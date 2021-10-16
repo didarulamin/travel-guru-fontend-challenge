@@ -1,0 +1,34 @@
+.home {
+  background-image: url("../../assets/Rectangle 1_background.png");
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+  color: #fafafb;
+}
+
+.overly {
+  height: 100vh;
+  background: rgba(54, 53, 52, 0.63);
+}
+.hero-section {
+  width: 450px;
+}
+
+.card {
+  width: 270px;
+  height: 414px;
+  position: relative;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.overly-text {
+  position: absolute;
+  bottom: 0;
+  margin: 20px;
+}
+.main-section {
+  margin-top: 50px;
+}
