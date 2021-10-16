@@ -1,0 +1,36 @@
+.card {
+  width: 270px !important;
+  height: 414px;
+  border-radius: 20px;
+
+  background-color: bisque;
+  overflow: hidden;
+  color: #fff;
+}
+
+.card img {
+  width: 290px;
+  height: 430px;
+}
+.overly-text {
+  position: absolute;
+  bottom: 0;
+  margin: 20px;
+}
+
+.slider-container {
+  position: relative;
+  width: 900px;
+  left: 20%;
+  margin-bottom: 20px;
+}
+/* 
+@media (max-width: 786px) and (min-width: 992px) {
+  .slider-container {
+    position: relative;
+    width: 900px;
+    left: 35%;
+    margin-bottom: 20px;
+  }
+}
+ */

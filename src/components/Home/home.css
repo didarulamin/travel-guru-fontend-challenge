@@ -1,27 +1,8 @@
-.home {
-  background-image: url("../../assets/Rectangle 1_background.png");
-
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-
-  color: #fafafb;
-}
-
-.overly {
-  height: 100vh;
-  background: rgba(54, 53, 52, 0.63);
-}
 .hero-section {
-  width: 450px;
-}
-
-.card {
-  width: 270px;
-  height: 414px;
+  /* margin-left: 100px; */
   position: relative;
-  border-radius: 20px;
-  margin: 20px;
+  top: 20px;
+  left: 10%;
 }
 
 .overly-text {
@@ -31,4 +12,37 @@
 }
 .main-section {
   margin-top: 50px;
+  overflow: hidden;
 }
+
+.hero-text {
+  line-height: 100px;
+  font-size: 70px;
+}
+.hero-para {
+  width: 400px;
+}
+
+.slider-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* @media (min-width: 768px) {
+  .slider-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+  }
+
+  .hero-section {
+   
+    position: relative;
+    top: 20px;
+    left: 20%;
+  }
+}
+ */

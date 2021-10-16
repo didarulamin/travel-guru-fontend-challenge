@@ -1,31 +1,35 @@
 import React from "react";
 import "./header.css";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <nav className=" container py-3 ">
+    <nav className=" container py-4 ">
       <div className=" d-flex justify-content-between  ">
         <div className="logo">
           <img src={logo} alt="" />
         </div>
 
-        <input type="text" placeholder="Search your Destination" />
+        <form className="search-form ">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search your Destination" />
+        </form>
         <div className="container-menu">
-          <a className="btn text-reset " href="">
+          <Link className="btn text-reset " to="">
             News
-          </a>
-          <a className="btn text-reset " href="">
+          </Link>
+          <Link className="btn text-reset" to="/destination">
             Destination
-          </a>
-          <a className="btn text-reset " href="">
+          </Link>
+          <Link className="btn text-reset " to="">
             Blog
-          </a>
-          <a className="btn text-reset" href="">
+          </Link>
+          <Link className="btn text-reset" to="">
             Contact
-          </a>
-          <a className="btn button-color" href="">
+          </Link>
+          <Link className="btn button-color" to="">
             Login
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

@@ -1,4 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
+.App {
+  color: #fafafb;
+  background-image: url("../src/assets/Rectangle 1_background.png");
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.overly {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
 }

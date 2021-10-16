@@ -1,6 +1,42 @@
 .button-color {
   background-color: #f9a51a;
 }
-.header-container {
+
+.search-form {
+  width: 400px;
+  height: 44px;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  border: 2px solid #fff;
+  background: rgba(228, 209, 209, 0.2);
+  border-radius: 10px;
+}
+
+.search-form input {
+  background-color: transparent;
   position: absolute;
+  left: 60px;
+  font-size: 18px;
+  top: 15%;
+  border: transparent;
+  color: #fff;
+  width: 80%;
+}
+
+.search-form input:focus {
+  outline: none;
+}
+
+.fa-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+  color: #fff;
+  font-size: 25px;
+}
+::placeholder {
+  font-size: 18px;
+  color: white;
 }

@@ -1,42 +1,47 @@
 import React from "react";
 import "./home.css";
-import Header from "./../Header/Header";
-import card2 from "../../assets/card2.png";
-const Home = () => {
-  return (
-    <div className="home ">
-      <div className="overly ">
-        <Header></Header>s
-        <div className="main-section d-flex justify-content-center ">
-          <div className="hero-section">
-            <h1>Cox's bazar</h1>
-            <p>
-              Cox's Bazar is a city, fishing port, tourism centre and district
-              headquarters in southeastern Bangladesh. It is famous mostly for
-              its long natural sandy beach, and it ...
-            </p>
-            <a className="btn button-color" href="#">
-              Booking
-            </a>
-          </div>
 
-          <div className="travel-cards d-flex ">
-            <div className="card overly ">
-              <img src={card2} alt="" />
-              <h1 className="overly-text">Sreemangal</h1>
-            </div>
-            <div className="card overly ">
-              <img src={card2} alt="" />
-              <h1 className="overly-text">Sreemangal</h1>
-            </div>
-            <div className="card overly ">
-              <img src={card2} alt="" />
-              <h1 className="overly-text">Sreemangal</h1>
-            </div>
-          </div>
+import left_icon from "../../assets/left_icon.png";
+import right_icon from "../../assets/right_icon.png";
+import { Link } from "react-router-dom";
+import SimpleSlider from "../Cardslider/Cardslider";
+import { useRef } from "react";
+
+const Home = () => {
+  const sliderRef = useRef();
+  const nextSlide = (sliderRef) => {
+    sliderRef.current.slickNext();
+  };
+  const prevSlide = (sliderRef) => {
+    sliderRef.current.slickPrev();
+  };
+  return (
+    <>
+      <div className="main-section d-flex  justify-content-content">
+        <div className="hero-section ">
+          <p className="hero-text">COX'S BAZAR</p>
+          <p className="hero-para">
+            Cox's Bazar is a city, fishing port, tourism centre and district
+            headquarters in southeastern Bangladesh. It is famous mostly for its
+            long natural sandy beach, and it ...
+          </p>
+          <Link className="btn button-color align-self-start" to="#">
+            Booking
+          </Link>
         </div>
+
+        <SimpleSlider sliderRef={sliderRef} />
       </div>
-    </div>
+
+      <div className="slider-button">
+        <button onClick={() => prevSlide(sliderRef)} className="btn">
+          <img src={left_icon} alt="" />
+        </button>
+        <button onClick={() => nextSlide(sliderRef)} className="btn">
+          <img src={right_icon} alt="" />
+        </button>
+      </div>
+    </>
   );
 };
 
